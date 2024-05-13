@@ -855,10 +855,14 @@ table.alt tbody tr td {
         margin: 0; }
       .testimonials .content .author .image {
         margin-right: 2rem;
-        width: 20%; }
-        .testimonials .content .author .image img {
-          border-radius: 100%;
-          max-width: 100%; }
+        width: 256px; 
+      	height: 256px;}
+	.testimonials .content .author .image img {
+          border-radius: 50%;
+	  width: 100%; /* This will make the image fill the container */
+          height: 100%; /* This will make the image fill the container */
+          object-fit: cover;
+          }
     .testimonials .content .credit {
       font-size: 0.75rem; }
     .testimonials .content p:last-child {
